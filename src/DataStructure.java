@@ -1,18 +1,18 @@
 
-public class DataStructure {
-	private Listing[] data;
+public class DataStructure<E> {
+	private Object[] data;
 	private int size = 100;
 	private int next = 0;
 	
 	public DataStructure(){
-		data = new Listing[size];
+		data = new Object[size];
 	}
 	
 	public DataStructure(int NumberofListings){
-		data = new Listing[NumberofListings];
+		data = new Object[NumberofListings];
 	}
 	
-	public void addListing(Listing newListing){
+	public void addListing(E newListing){
 		data[next] = newListing;
 		next = next + 1;
 	}
