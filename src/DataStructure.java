@@ -1,15 +1,17 @@
 
-public class DataStructure<E> {
-	private Object[] data;
+public class DataStructure<E>{
+	private E[] data;
 	private int size = 100;
 	private int next = 0;
 	
+	@SuppressWarnings("unchecked")
 	public DataStructure(){
-		data = new Object[size];
+		data = (E[]) new Object[size];
 	}
 	
+	@SuppressWarnings("unchecked")
 	public DataStructure(int NumberofListings){
-		data = new Object[NumberofListings];
+		data =(E[]) new Object[NumberofListings];
 	}
 	
 	public void addListing(E newListing){

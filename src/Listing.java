@@ -13,7 +13,7 @@ public class Listing {
 		this.age= 0;
 	}
 	
-	public String toString(){ // return the information of Listing as a String
+	public String toString(){
 		String info= "Name: "+this.getName()+"  "+"Age: "+this.getAge(); 
 		return info; 
 	}
